@@ -24,7 +24,7 @@ function preload(){
 function setup() {
   createCanvas(400, 400);
   
-  //crie o fundo
+  //cria o fundo
   scene = createSprite(0,0,400,400);
   scene.addImage(backgroundImage);
   scene.scale = 2.5
@@ -38,11 +38,11 @@ function setup() {
    score = 0  
   redB= new Group();
   //Crie um grupo para greenBalloon (balão verde)
-  xxxxxB = new Group();
+  greenB = new Group();
  //Crie um grupo para blueBalloon (balão azul)
-  xxxxB = new Group();
+  blueB = new Group();
  //Crie um grupo para pinkBalloon (balão rosa)
-  xxxxB = new Group();
+  pinkBGroup = new Group();
   
   arrowGroup= new Group();
  
@@ -110,25 +110,25 @@ if (arrowGroup.isTouching(greenB)) {
 //Use função destroyEach() para destruir o grupo blueBalloon (balão azul)
 //Use função destroyEach() para destruir arrowGroup.
 //Aumente a pontuação em 2.
-if (arrowGroup.isTouching(xxxxB)) {
-  xxxxB.destroyEach();
+if (arrowGroup.isTouching(blueB)) {
+  blueB.destroyEach();
   arrowGroup.destroyEach();
-  score=score+00;
+  score=score+02;
 }
 
 //Crie a função isTouching()
 //Use função destroyEach() para destruir o grupo pinkBalloon (balão rosa)
 //Use função destroyEach() para destruir arrowGroup.
 //Aumente a pontuação em 1.
-if (arrowGroup.isTouching(xxxxB)) {
-  xxxxB.destroyEach();
+if (arrowGroup.isTouching(pinkB)) {
+  pinkB.destroyEach();
   arrowGroup.destroyEach();
-  score=score+00;
+  score=score+01;
 }
  }
   
   drawSprites();
-  text("Pontuação: "+ score, 300,50);
+  text("Pontuação:1 "+ score, 300,50);
 }
 
 

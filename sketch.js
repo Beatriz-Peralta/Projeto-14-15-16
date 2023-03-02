@@ -42,7 +42,7 @@ function setup() {
  //Crie um grupo para blueBalloon (balão azul)
   blueB = new Group();
  //Crie um grupo para pinkBalloon (balão rosa)
-  pinkBGroup = new Group();
+  pinkB = new Group();
   
   arrowGroup= new Group();
  

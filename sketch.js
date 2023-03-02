@@ -113,7 +113,7 @@ if (arrowGroup.isTouching(greenB)) {
 if (arrowGroup.isTouching(blueB)) {
   blueB.destroyEach();
   arrowGroup.destroyEach();
-  score=score+02;
+  score=score+2;
 }
 
 //Crie a função isTouching()
@@ -123,7 +123,7 @@ if (arrowGroup.isTouching(blueB)) {
 if (arrowGroup.isTouching(pinkB)) {
   pinkB.destroyEach();
   arrowGroup.destroyEach();
-  score=score+01;
+  score=score+1;
 }
  }
   
